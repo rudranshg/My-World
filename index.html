@@ -212,7 +212,6 @@
             box1[i].addEventListener('drop', (event) => {
                 console.log('Drop has been triggered');
                 if (event.target.className == "box") {
-                    event.target.style.background = "";
                     dragged.parentNode.removeChild(dragged);
                     event.target.appendChild(dragged);
                 }
