@@ -17,8 +17,7 @@
         top: 45vh;
         left: 25vw;
     }
-    .box,
-    .box-letter {
+    .box{
         display: inline-block;
         width: 60px;
         height: 60px;
@@ -143,40 +142,40 @@
     <div class="box" id="box-6"></div>
     <div class="box" id="box-7"></div>
     <div class="box" id="box-8"></div>
-    <div class="box-letter" id="letter-1">
+    <div class="box" id="letter-1">
         <div class="letter" draggable="true">R</div>
     </div>
-    <div class="box-letter" id="letter-2">
+    <div class="box" id="letter-2">
         <div class="letter" draggable="true">U</div>
     </div>
-    <div class="box-letter" id="letter-3">
+    <div class="box" id="letter-3">
         <div class="letter" draggable="true">D</div>
     </div>
-    <div class="box-letter" id="letter-4">
+    <div class="box" id="letter-4">
         <div class="letter" draggable="true">R</div>
     </div>
-    <div class="box-letter" id="letter-5">
+    <div class="box" id="letter-5">
         <div class="letter" draggable="true">A</div>
     </div>
-    <div class="box-letter" id="letter-6">
+    <div class="box" id="letter-6">
         <div class="letter" draggable="true">N</div>
     </div>
-    <div class="box-letter" id="letter-7">
+    <div class="box" id="letter-7">
         <div class="letter" draggable="true">S</div>
     </div>
-    <div class="box-letter" id="letter-8">
+    <div class="box" id="letter-8">
         <div class="letter" draggable="true">H</div>
     </div>
-    <div class="box-letter" id="letter-9">
+    <div class="box" id="letter-9">
         <div class="letter" draggable="true">T</div>
     </div>
-    <div class="box-letter" id="letter-10">
+    <div class="box" id="letter-10">
         <div class="letter" draggable="true">E</div>
     </div>
-    <div class="box-letter" id="letter-11">
+    <div class="box" id="letter-11">
         <div class="letter" draggable="true">I</div>
     </div>
-    <div class="box-letter" id="letter-12">
+    <div class="box" id="letter-12">
         <div class="letter" draggable="true">C</div>
     </div>
     <div>
@@ -190,7 +189,6 @@
     <script>
         let dragged;
         let box1 = document.querySelectorAll(".box");
-        let box2 = box1;
         let letter1 = document.querySelectorAll(".letter");
         for (var i = 0; i < letter1.length; i++) {
             letter1[i].addEventListener('dragstart', (event) => {
